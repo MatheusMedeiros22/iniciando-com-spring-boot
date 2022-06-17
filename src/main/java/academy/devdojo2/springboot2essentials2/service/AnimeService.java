@@ -36,7 +36,7 @@ public class AnimeService {
         return anime;
     }
 
-    public boolean delete(long id) {
-        return animes.remove(findById(id));
+    public void delete(long id) {
+         animes.remove(findById(id));
     }
 }
